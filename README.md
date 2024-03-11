@@ -24,7 +24,7 @@ Without any kind of finetuning, it was noticed that Gemma-7b understood Bengali 
 
 ## Finetuning
 # Prompt for Finetuning
-```shell
+```markdown
 <start_of_turn>
 Provide a concise Bengali summary of the following news article, focusing on the most important information. 
 
