@@ -1,6 +1,7 @@
 # Bangla News Summarization with Gemma-7b (Instruct)
 
 This GitHub repo outlines an approach for building a **Bangla News Summarization** project utilizing **Gemini-7b (Instrct)**.
+* The finetuned model is available on: https://huggingface.co/samanjoy2/gemma7b-it_banglaNewsSum
 
 ### Dataset
 
@@ -50,24 +51,29 @@ Summary: {data_point["Summary"]}
 
 # Hyperparameters
 ``` python
-save_strategy="steps",
-evaluation_strategy="steps",
-per_device_train_batch_size=16,
-per_device_eval_batch_size=32,
-gradient_accumulation_steps=16,
-num_train_epochs=5,
-logging_steps=20,
-eval_steps=20,
-save_steps=20,
-warmup_steps=100,
-learning_rate=2e-4,
-fp16=True,
-optim="paged_adamw_8bit",
-lr_scheduler_type="cosine",
-warmup_ratio=0.01,
-report_to="none",
-save_total_limit=3,
+save_strategy="steps"
+evaluation_strategy="steps"
+per_device_train_batch_size=16
+per_device_eval_batch_size=32
+gradient_accumulation_steps=16
+num_train_epochs=5
+logging_steps=20
+eval_steps=20
+save_steps=20
+warmup_steps=100
+learning_rate=2e-4
+fp16=True
+optim="paged_adamw_8bit"
+lr_scheduler_type="cosine"
+warmup_ratio=0.01
+report_to="none"
+save_total_limit=3
 load_best_model_at_end=True
 ```
 
-# Hi
+# Training Output
+
+``` python
+TrainOutput(global_step=260, training_loss=3.2770693999070386, metrics={'train_runtime': 16852.8414, 'train_samples_per_second': 3.966, 'train_steps_per_second': 0.015, 'total_flos': 7.048804415292273e+17, 'train_loss': 3.2770693999070386, 'epoch': 4.98})
+
+```
