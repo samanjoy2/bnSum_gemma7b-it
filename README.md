@@ -1,10 +1,10 @@
 # Bangla News Summarization with Gemma-7b (Instruct)
 
-This GitHub repo outlines an approach for building a Bangla News Summarization project utilizing Gemini-7b (Instrct).
+This GitHub repo outlines an approach for building a **Bangla News Summarization** project utilizing **Gemini-7b (Instrct)**.
 
 ### Dataset
 
-Link: https://www.kaggle.com/datasets/prithwirajsust/bengali-news-summarization-dataset
+**Link:** https://www.kaggle.com/datasets/prithwirajsust/bengali-news-summarization-dataset
 
 ## Reason for using this dataset:
 1. Focuses on Bengali Abstractive News Summarization (BANS): This dataset is specifically designed for training models that can generate summaries of Bengali news articles, unlike datasets that focus on extractive summarization (copying sentences from the article).
