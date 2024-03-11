@@ -1,4 +1,4 @@
-## Bangla News Summarization with Gemma-7b (Instruct)
+# Bangla News Summarization with Gemma-7b (Instruct)
 
 This github repo outlines an approach for building a Bangla News Summarization project utilizing Gemini-7b (Instrct).
 
