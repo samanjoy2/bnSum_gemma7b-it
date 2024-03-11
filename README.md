@@ -22,4 +22,25 @@ LLMs are known for their ability to handle complex language tasks like summariza
 ### Zero Shot Bangla Text Handling
 Without any kind of finetuning, it was noticed that Gemma-7b understood Bengali quite well compared to other Models.
 
-## Model Choice
+## Finetuning
+# Prompt for Finetuning
+```shell
+prompt = f"""
+<start_of_turn>
+Provide a concise Bengali summary of the following news article, focusing on the most important information. 
+
+Note:
+Use only Bengali for the summary.
+Stay objective and factual in your summary.
+
+####
+
+Article: {train_df["Text"].values[0]}
+
+####
+<end_of_turn>
+"""
+prompt
+```
+
+# Hi
