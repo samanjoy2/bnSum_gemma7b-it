@@ -11,7 +11,7 @@ Link : https://www.kaggle.com/datasets/prithwirajsust/bengali-news-summarization
 2. Large corpus for Bengali NLP tasks: With over 19,000 articles and summaries, this dataset provides a valuable resource for training and evaluating Bengali Natural Language Processing (NLP) models, especially those focused on summarization.
 3. Publicly available and well-documented: The dataset is hosted on Kaggle, a popular platform for data science, making it easily accessible for researchers and practitioners. The dataset description includes details about the data collection process and statistics about the articles and summaries.
 
-### Model Choice
+## Model Choice
 Model: Gemma 7b (Instruct)
 
 1. Text-to-Text, Decoder-only: This architecture is commonly used for summarization tasks, where the model takes the article as input and generates a summary as output.
