@@ -28,7 +28,7 @@ Without any kind of finetuning, it was noticed that Gemma-7b understood Bengali 
    ```
    git clone https://github.com/samanjoy2/bnSum_gemma7b-it.git
    ```
-2. sdsds
+2. Replace the *kaggle.json* file with yours one. Link: https://www.kaggle.com/settings -> API -> Create New Token
 
 
 ## Finetuning
