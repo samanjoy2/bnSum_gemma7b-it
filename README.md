@@ -24,7 +24,7 @@ LLMs are known for their ability to handle complex language tasks like summariza
 Without any kind of finetuning, it was noticed that Gemma-7b understood Bengali quite well compared to other Models.
 
 ## Finetuning
-# Prompt for Finetuning
+### Prompt for Finetuning
 ```
 <start_of_turn>
 Provide a concise Bengali summary of the following news article, focusing on the most important information. 
@@ -49,7 +49,7 @@ Summary: {data_point["Summary"]}
 <end_of_turn>
 ```
 
-# Hyperparameters
+### Hyperparameters
 ``` python
 save_strategy="steps"
 evaluation_strategy="steps"
@@ -71,7 +71,7 @@ save_total_limit=3
 load_best_model_at_end=True
 ```
 
-# Training Output
+### Training Output
 
 ``` python
 TrainOutput(global_step=260, training_loss=3.2770693999070386, metrics={'train_runtime': 16852.8414, 'train_samples_per_second': 3.966, 'train_steps_per_second': 0.015, 'total_flos': 7.048804415292273e+17, 'train_loss': 3.2770693999070386, 'epoch': 4.98})
