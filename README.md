@@ -5,7 +5,8 @@ This GitHub repo outlines an approach for building a **Bangla News Summarization
 
 ### Dataset
 
-**Link:** https://www.kaggle.com/datasets/prithwirajsust/bengali-news-summarization-dataset
+* **Link:** https://www.kaggle.com/datasets/prithwirajsust/bengali-news-summarization-dataset
+* We utilized the same data splits used by https://link.springer.com/chapter/10.1007/978-981-33-4673-4_4 for direct comparison.
 
 ## Reason for using this dataset:
 1. **Focuses on Bengali Abstractive News Summarization (BANS):** This dataset is specifically designed for training models that can generate summaries of Bengali news articles, unlike datasets that focus on extractive summarization (copying sentences from the article).
@@ -85,3 +86,19 @@ load_best_model_at_end=True
 ``` python
 TrainOutput(global_step=260, training_loss=3.2770693999070386, metrics={'train_runtime': 16852.8414, 'train_samples_per_second': 3.966, 'train_steps_per_second': 0.015, 'total_flos': 7.048804415292273e+17, 'train_loss': 3.2770693999070386, 'epoch': 4.98})
 ```
+## Results
+```
+Predicted Summary: ময়মনসিংহে বাস ও অটোরিকশার সংঘর্ষে পাঁচজন নিহত
+True Label: ময়মনসিংহে বাসঅটোরিকশা সংঘর্ষে নিহত ৫
+
+Predicted Summary: নারায়ণগঞ্জে সাত খুনের ঘটনায় পুলিশের গ্রেপ্তার
+True Label: নাগঞ্জে ৭ খুন: আরেকজন গ্রেপ্তার
+
+Predicted Summary: নিজস্ব অর্থে বহু প্রতীক্ষিত পদ্মা সেতুর কাজ চলছে পুরোদমে।
+True Label: নিজস্ব অর্থে এগিয়ে যাচ্ছে পদ্মা সেতুর কাজ
+```
+
+### Analysis
+* Many times the LLM didn't follow the prompt template, as a result, there was sometimes no output.
+* Coulnt generate new words that were not in the main article which was seen in the dataset.
+* Our model's BLEU Score is 0.44 which is higher than https://link.springer.com/chapter/10.1007/978-981-33-4673-4_4. [Note: We skipped the sentences that the model could not generate any result]
