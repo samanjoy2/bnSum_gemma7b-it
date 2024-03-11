@@ -25,7 +25,6 @@ Without any kind of finetuning, it was noticed that Gemma-7b understood Bengali 
 ## Finetuning
 # Prompt for Finetuning
 ```shell
-prompt = f"""
 <start_of_turn>
 Provide a concise Bengali summary of the following news article, focusing on the most important information. 
 
@@ -35,12 +34,18 @@ Stay objective and factual in your summary.
 
 ####
 
-Article: {train_df["Text"].values[0]}
+Article: {data_point["Text"]}
 
 ####
 <end_of_turn>
-"""
-prompt
+
+<start_of_turn>
+####
+
+Summary: {data_point["Summary"]} 
+
+####
+<end_of_turn>
 ```
 
 # Hi
