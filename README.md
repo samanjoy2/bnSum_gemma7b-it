@@ -34,6 +34,25 @@ Without any kind of finetuning, it was noticed that Gemma-7b understood Bengali 
 4. [Inference] Run the *inference.ipynb*. Can be done with ~8GB VRAM. Was used *NVIDIA GeForce RTX 3090*.
 
 ## Finetuning
+## Loading Gemma 7b Model with Quantization Configuration
+The Gemma 7b model, which is a pre-trained language model, is loaded for further fine-tuning.
+Quantization configuration is applied during the loading process. Quantization is a technique used to reduce the memory footprint and computational cost of neural networks by representing weights and activations with lower precision data types, such as 8-bit integers or bfloat16.
+Defining LoraConfig for LoRA Layer Integration:
+
+LoraConfig is defined to integrate LoRA (Learned Optimizer for Rethinking Attention) layers into the model.
+LoRA is a technique that aims to improve the attention mechanism in transformer models by learning the optimal attention pattern for each layer dynamically during training. This can lead to more efficient and effective attention mechanisms.
+Preparing for Training with Peft and LoRA:
+
+The model is prepared for training with Peft (Parameter Efficient Fine-Tuning) and LoRA techniques.
+Peft is a method for fine-tuning pre-trained language models with reduced computational and memory requirements compared to traditional fine-tuning approaches. It aims to achieve similar performance while using fewer resources.
+By integrating Peft and LoRA into the model configuration, the model is set up to undergo efficient fine-tuning with improved attention mechanisms.
+Now, let's discuss Bits and Bytes:
+
+Bits and Bytes:
+Bits and Bytes is a library for model quantization and compression developed by Hugging Face. It offers tools and techniques for reducing the size of neural network models, making them more memory and computationally efficient.
+In the provided code, Bits and Bytes is used for quantization of the Gemma 7b model. The configuration used in the code specifies parameters such as whether to load weights in 4-bit format, the type of quantization method to use, and the data type for computation during quantization (bfloat16).
+By applying quantization techniques from the Bits and Bytes library, the loaded model can be trained and fine-tuned more efficiently while still maintaining performance levels.
+
 ### Prompt for Finetuning
 ```python
 <start_of_turn>
