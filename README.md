@@ -48,4 +48,26 @@ Summary: {data_point["Summary"]}
 <end_of_turn>
 ```
 
+# Hyperparameters
+``` python
+save_strategy="steps",
+evaluation_strategy="steps",
+per_device_train_batch_size=16,
+per_device_eval_batch_size=32,
+gradient_accumulation_steps=16,
+num_train_epochs=5,
+logging_steps=20,
+eval_steps=20,
+save_steps=20,
+warmup_steps=100,
+learning_rate=2e-4,
+fp16=True,
+optim="paged_adamw_8bit",
+lr_scheduler_type="cosine",
+warmup_ratio=0.01,
+report_to="none",
+save_total_limit=3,
+load_best_model_at_end=True
+```
+
 # Hi
