@@ -8,7 +8,7 @@ This GitHub repo outlines an approach for building a **Bangla News Summarization
 * **Link:** https://www.kaggle.com/datasets/prithwirajsust/bengali-news-summarization-dataset
 * We utilized the same data splits used by https://link.springer.com/chapter/10.1007/978-981-33-4673-4_4 for direct comparison.
 
-## Reason for using this dataset:
+## Reason for using this Dataset
 1. **Focuses on Bengali Abstractive News Summarization (BANS):** This dataset is specifically designed for training models that can generate summaries of Bengali news articles, unlike datasets that focus on extractive summarization (copying sentences from the article).
 2. **Large corpus for Bengali NLP tasks:** With over 19,000 articles and summaries, this dataset provides a valuable resource for training and evaluating Bengali Natural Language Processing (NLP) models, especially those focused on summarization.
 3. **Publicly available and well-documented:** The dataset is hosted on Kaggle, a popular platform for data science, making it easily accessible for researchers and practitioners. The dataset description includes details about the data collection process and statistics about the articles and summaries.
