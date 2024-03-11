@@ -8,9 +8,9 @@ This GitHub repo outlines an approach for building a **Bangla News Summarization
 **Link:** https://www.kaggle.com/datasets/prithwirajsust/bengali-news-summarization-dataset
 
 ## Reason for using this dataset:
-1. Focuses on Bengali Abstractive News Summarization (BANS): This dataset is specifically designed for training models that can generate summaries of Bengali news articles, unlike datasets that focus on extractive summarization (copying sentences from the article).
-2. Large corpus for Bengali NLP tasks: With over 19,000 articles and summaries, this dataset provides a valuable resource for training and evaluating Bengali Natural Language Processing (NLP) models, especially those focused on summarization.
-3. Publicly available and well-documented: The dataset is hosted on Kaggle, a popular platform for data science, making it easily accessible for researchers and practitioners. The dataset description includes details about the data collection process and statistics about the articles and summaries.
+1. **Focuses on Bengali Abstractive News Summarization (BANS):** This dataset is specifically designed for training models that can generate summaries of Bengali news articles, unlike datasets that focus on extractive summarization (copying sentences from the article).
+2. **Large corpus for Bengali NLP tasks:** With over 19,000 articles and summaries, this dataset provides a valuable resource for training and evaluating Bengali Natural Language Processing (NLP) models, especially those focused on summarization.
+3. **Publicly available and well-documented:** The dataset is hosted on Kaggle, a popular platform for data science, making it easily accessible for researchers and practitioners. The dataset description includes details about the data collection process and statistics about the articles and summaries.
 
 ## Model Choice
 * **Model Name:** Gemma 7b (Instruct)
@@ -22,6 +22,14 @@ This architecture is commonly used for summarization tasks, where the model take
 LLMs are known for their ability to handle complex language tasks like summarization.
 ### Zero Shot Bangla Text Handling
 Without any kind of finetuning, it was noticed that Gemma-7b understood Bengali quite well compared to other Models.
+
+## How to run
+1. Clone this repo
+   ```
+   git clone https://github.com/samanjoy2/bnSum_gemma7b-it.git
+   ```
+2. sdsds
+
 
 ## Finetuning
 ### Prompt for Finetuning
@@ -75,5 +83,4 @@ load_best_model_at_end=True
 
 ``` python
 TrainOutput(global_step=260, training_loss=3.2770693999070386, metrics={'train_runtime': 16852.8414, 'train_samples_per_second': 3.966, 'train_steps_per_second': 0.015, 'total_flos': 7.048804415292273e+17, 'train_loss': 3.2770693999070386, 'epoch': 4.98})
-
 ```
