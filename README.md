@@ -34,8 +34,7 @@ Without any kind of finetuning, it was noticed that Gemma-7b understood Bengali 
 4. [Inference] Run the *inference.ipynb*. Can be done with ~8GB VRAM. Was used *NVIDIA GeForce RTX 3090*.
 
 ## Finetuning
-## Loading Gemma 7b Model with Quantization Configuration
-The Gemma 7b model, which is a pre-trained language model, is loaded for further fine-tuning.
+## Loading Gemma 7b Model with Quantization Configuration (Bits and Bytes)
 Quantization configuration is applied during the loading process. Quantization is a technique used to reduce the memory footprint and computational cost of neural networks by representing weights and activations with lower precision data types, such as 8-bit integers or bfloat16. Bits and Bytes is a library for model quantization and compression developed by Hugging Face. It offers tools and techniques for reducing the size of neural network models, making them more memory and computationally efficient.
 In the provided code, Bits and Bytes is used for quantization of the Gemma 7b model. The configuration used in the code specifies parameters such as whether to load weights in 4-bit format, the type of quantization method to use, and the data type for computation during quantization (bfloat16).
 By applying quantization techniques from the Bits and Bytes library, the loaded model can be trained and fine-tuned more efficiently while still maintaining performance levels.
