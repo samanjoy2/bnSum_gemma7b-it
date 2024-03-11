@@ -12,7 +12,7 @@ Link : https://www.kaggle.com/datasets/prithwirajsust/bengali-news-summarization
 3. Publicly available and well-documented: The dataset is hosted on Kaggle, a popular platform for data science, making it easily accessible for researchers and practitioners. The dataset description includes details about the data collection process and statistics about the articles and summaries.
 
 ## Model Choice
-Model: Gemma 7b (Instruct)
+Model: Gemma 7b (Instruct) https://huggingface.co/google/gemma-7b-it
 
 1. Text-to-Text, Decoder-only: This architecture is commonly used for summarization tasks, where the model takes the article as input and generates a summary as output.
 2. Large Language Model (LLM): LLMs are known for their ability to handle complex language tasks like summarization.
