@@ -26,7 +26,7 @@ Without any kind of finetuning, it was noticed that Gemma-7b understood Bengali 
 
 ## How to run
 1. Clone this repo
-   ```
+   ```python
    git clone https://github.com/samanjoy2/bnSum_gemma7b-it.git
    ```
 2. Replace the *kaggle.json* file with yours one. Link: https://www.kaggle.com/settings -> API -> Create New Token
@@ -35,7 +35,7 @@ Without any kind of finetuning, it was noticed that Gemma-7b understood Bengali 
 
 ## Finetuning
 ### Prompt for Finetuning
-```
+```python
 <start_of_turn>
 Provide a concise Bengali summary of the following news article, focusing on the most important information. 
 
@@ -87,7 +87,7 @@ load_best_model_at_end=True
 TrainOutput(global_step=260, training_loss=3.2770693999070386, metrics={'train_runtime': 16852.8414, 'train_samples_per_second': 3.966, 'train_steps_per_second': 0.015, 'total_flos': 7.048804415292273e+17, 'train_loss': 3.2770693999070386, 'epoch': 4.98})
 ```
 ## Results
-```shell
+```python
 Predicted Summary: ময়মনসিংহে বাস ও অটোরিকশার সংঘর্ষে পাঁচজন নিহত
 True Label: ময়মনসিংহে বাসঅটোরিকশা সংঘর্ষে নিহত ৫
 
