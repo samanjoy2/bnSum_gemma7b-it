@@ -101,4 +101,4 @@ True Label: নিজস্ব অর্থে এগিয়ে যাচ্ছ�
 ### Analysis
 * Many times the LLM didn't follow the prompt template, as a result, there was sometimes no output.
 * Coulnt generate new words that were not in the main article which was seen in the dataset.
-* Our model's BLEU Score is 0.44 which is higher than https://link.springer.com/chapter/10.1007/978-981-33-4673-4_4. [Note: We skipped the sentences that the model could not generate any result]
+* Our model's BLEU Score is 0.4 which is higher than https://link.springer.com/chapter/10.1007/978-981-33-4673-4_4 [BLEU: 0.3]. [Note: We skipped the sentences that the model could not generate any result]
